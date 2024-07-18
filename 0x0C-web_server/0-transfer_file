@@ -17,5 +17,5 @@ else
   PRIVATE_KEY="$4"
 fi
 
-scp -o StrictHostKeyChecking=no "$PRIVATE_KEY" "$FILE" "$USERNAME@$SERVER_IP":~
+scp -o StrictHostKeyChecking=no -i "$PRIVATE_KEY" "$FILE" "$USERNAME@$SERVER_IP":~
 
