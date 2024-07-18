@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+if [ "$#" -lt 3 ]; then
+  echo "0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+  exit 1
+fi
+
+FILE="$1"
+SERVER_IP="$2"
+USERNAME="$3"
+
+if [ -z "$4" ]; then
+  #Default to using the default SSH private location
+  PRIVATE_KEY=~/.ssh/id_rsa
+else
+  PRIVATE_KEY="$4"
+fi
+
+scp -i "$PRIVATE_KEY" "$FILE" "$USERNAME@$SERVER_IP":~
+
