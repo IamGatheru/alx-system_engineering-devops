@@ -1,0 +1,1 @@
+Installing MySQL5.7.x in web-01 and web-02 servers. An introduction to mysqldump, the main role of databases, what a database replica is, its purpose, why database backups need to be stored in different physical locations and finally what operation an administrator should perform regularly to make sure that the database strategy works.
