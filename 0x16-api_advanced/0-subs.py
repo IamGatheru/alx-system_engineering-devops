@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-"""Function to query subscribers on a given Reddit subreddit."""
+"""
+Function to query subscribers on a given Reddit subreddit.
+"""
 
 
 def number_of_subscribers(subreddit):
-    """Queries the Reddit API and returns the number of subscribers
+    """
+    Queries the Reddit API and returns the number of subscribers
     to the subreddit
     """
     import requests
